@@ -1,2 +1,2 @@
 import React from 'react';import{renderToString}from'react-dom/server';import{StaticRouter}from'react-router';import{App}from'./App';
-export function render(url:string){return renderToString(<React.StrictMode><StaticRouter location={url}><App/></StaticRouter></React.StrictMode>)}
+export function render(url:string){const basePath=import.meta.env.BASE_URL.replace(/\/$/,'');const location=`${basePath}${url}`;return renderToString(<React.StrictMode><StaticRouter location={location} basename={basePath||'/'}><App/></StaticRouter></React.StrictMode>)}

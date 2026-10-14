@@ -11,8 +11,9 @@
   .sale-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 860px) {
   html { scroll-padding-top: 76px; }
+  body { overflow-x: clip; }
   .topline { height: 30px; font-size: 9px; }
   .header-inner { height: 76px; }
   .brand-seal { width: 48px; height: 48px; }
@@ -24,7 +25,7 @@
   .main-nav.is-open { display: grid; gap: 0; }
   .main-nav > a:not(.nav-cta) { padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
   .nav-cta { justify-content: space-between; margin-top: 14px; }
-  .hero { grid-template-columns: 1fr; gap: 37px; padding-top: 48px; padding-bottom: 59px; }
+  .hero { min-height: 0; grid-template-columns: 1fr; gap: 37px; padding-top: 48px; padding-bottom: 59px; }
   .hero-copy { padding: 0; }
   .hero h1 { max-width: 620px; font-size: clamp(54px, 10vw, 76px); }
   .hero-lede { max-width: 540px; }
@@ -39,10 +40,10 @@
   .service-card { min-height: 0; padding: 29px 25px; }
   .service-card h3 { max-width: 500px; }
   .process-layout { gap: 35px; }
-  .process-intro { max-width: 600px; }
+  .process-intro, .questions-layout > div:first-child { position: static; max-width: 600px; }
   .process-list article { grid-template-columns: 40px 1fr; gap: 13px; }
-  .sales-empty { grid-template-columns: 44px 1fr; gap: 13px 18px; padding: 24px; }
-  .sales-empty .text-link { grid-column: 2; }
+  .sales-empty { grid-template-columns: 44px minmax(0, 1fr); gap: 13px 18px; padding: 24px; }
+  .sales-empty .text-link { grid-column: 2; white-space: normal; }
   .sale-grid { grid-template-columns: 1fr; }
   .faq-list { border-top: 1px solid var(--line); }
   .contact-copy { max-width: 640px; }
@@ -50,15 +51,19 @@
   .footer-main { flex-wrap: wrap; align-items: start; padding: 30px 0; }
   .footer-main > p { margin-left: auto; }
   .footer-contact { width: 100%; }
+  .sale-contact { align-items: flex-start; flex-direction: column; }
+  .sale-gallery { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 520px) {
   .container { width: calc(100% - 34px); }
+  .section { padding: 58px 0; }
   .topline-inner > span { font-size: 8px; letter-spacing: .03em; }
   .topline-inner > a { font-size: 9px; }
   .brand-type > span { font-size: 10px; }
   .brand-type strong { font-size: 18px; }
   .brand-seal { width: 44px; height: 44px; }
+  .brand { gap: 9px; }
   .hero { gap: 30px; padding-top: 40px; }
   .hero .section-label { margin-bottom: 15px; }
   .hero h1 { font-size: clamp(46px, 12.4vw, 62px); line-height: 1.05; letter-spacing: -.045em; }
@@ -95,4 +100,5 @@
   .footer-bottom { flex-direction: column; align-items: flex-start; gap: 9px; }
   .sale-detail { padding-top: 44px; }
   .sale-detail-heading h1, .not-found h1 { font-size: 45px; }
+  .form-heading > span { white-space: normal; }
 }

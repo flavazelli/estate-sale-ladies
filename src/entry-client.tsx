@@ -3,8 +3,8 @@ import { hydrateRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import './styles/global.css';
-import './styles/responsive.css';
 import './styles/site.css';
+import './styles/responsive.css';
 
 hydrateRoot(
   document.getElementById('root')!,
