@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "pointe-claire-home-preview",
+    "title": "Collected home in Pointe-Claire",
+    "dateLabel": "Saturday, November 7 · 10 am–3 pm",
+    "location": "Pointe-Claire, West Island",
+    "coverTone": "blush",
+    "summary": "A fictional preview of a family home sale, with furniture, decor and everyday finds across several rooms.",
+    "photos": [],
+    "featuredItems": ["Dining table and chairs", "Vintage glassware", "Framed artwork", "Books and home decor"]
+  },
+  {
+    "slug": "beaconsfield-estate-preview",
+    "title": "Beaconsfield estate sale",
+    "dateLabel": "Saturday, November 14 · 9 am–2 pm",
+    "location": "Beaconsfield, West Island",
+    "coverTone": "rose",
+    "summary": "A fictional sample listing showing how a sale page can introduce the home and highlight a few items before the event.",
+    "photos": [],
+    "featuredItems": ["Mid-century sideboard", "Porcelain serving pieces", "Garden tools", "Small collectibles"]
+  },
+  {
+    "slug": "dollard-des-ormeaux-moving-preview",
+    "title": "Moving sale in Dollard-des-Ormeaux",
+    "dateLabel": "Sunday, November 22 · 10 am–2 pm",
+    "location": "Dollard-des-Ormeaux, West Island",
+    "coverTone": "ink",
+    "summary": "A fictional downsizing sale preview with practical furnishings, kitchen pieces and personal treasures ready for a new home.",
+    "photos": [],
+    "featuredItems": ["Bedroom furniture", "Kitchenware", "Lamps and mirrors", "Decorative pieces"]
+  }
+]
